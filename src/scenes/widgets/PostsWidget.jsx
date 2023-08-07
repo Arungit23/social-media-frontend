@@ -49,7 +49,7 @@
 
   return (  
 <>
-   {posts.map( 
+   {posts.length ? (posts.map( 
        ({
          _id,
          userId,
@@ -74,7 +74,7 @@
            likes={likes}
            comments={comments}  />
       )
-     )}
+     )):("")}
     </>
   );
  };
